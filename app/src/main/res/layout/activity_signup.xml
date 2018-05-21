@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:background="@color/colorPrimaryLight"-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#000000">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/back"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/back_white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/back"
+        android:layout_marginLeft="20dp"
+        android:text="Sign Up"
+        android:textSize="18dp"
+        android:textColor="#ffffff"/>
+</RelativeLayout>
+    <ProgressBar
+        android:id="@+id/pb_subcot"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:indeterminateDrawable="@android:drawable/progress_horizontal"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="First Name"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/rectangle_edit_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         style="@style/darktextviewstyle2"
+         android:text="We will send you a text verification"/>-->
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Last Name"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rectangle_edit_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rectangle_edit_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />
+    <!--<EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Address"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rectangle_edit_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rectangle_edit_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />
+    <!--<EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Confirm Password"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rectangle_edit_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />-->
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/hidePass"/>
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        style="@style/darktextviewstyle2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_white"
+        android:text="Create an Account"/>
+    <TextView
+        android:id="@+id/already_user"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Already have an Account?"
+        android:textColor="@android:color/holo_blue_light"/>
+
+</LinearLayout>

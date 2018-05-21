@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="khantique.organisation.com.khantique.Fragment.ContactUsFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="About Us"
+        android:textSize="20dp"
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:background="#dcdcdc"
+        android:textColor="#d2691e"
+        android:layout_marginTop="30dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:text="Khantique"
+    android:textSize="18dp"
+    android:id="@+id/text"
+    android:textColor="#1874cd"/>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/webView1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="On Your Behalf"
+        android:textSize="18dp"
+        android:id="@+id/text2"
+        android:textColor="#1874cd"/>
+
+    <WebView
+        android:id="@+id/webView2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/webView2"
+        android:src="@drawable/image"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
+
+</ScrollView>
